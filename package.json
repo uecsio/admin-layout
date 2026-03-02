@@ -1,5 +1,5 @@
 {
-  "name": "uecsio-admin-layout",
+  "name": "@uecsio/admin-layout",
   "version": "0.1.0",
   "description": "UECS.IO admin layout components — configurable header, collapsible sidebar, and content area",
   "type": "module",

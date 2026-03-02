@@ -1,11 +1,11 @@
-# uecsio-admin-layout
+# @uecsio/admin-layout
 
 Vue 3 admin layout components — configurable header, collapsible sidebar, and content area. Styled with Tailwind CSS. No UI framework dependency.
 
 ## Install
 
 ```bash
-npm install uecsio-admin-layout
+npm install @uecsio/admin-layout
 ```
 
 **Peer dependency:** Vue 3.4+
@@ -16,9 +16,9 @@ Import the CSS and the layout component:
 
 ```vue
 <script setup lang="ts">
-import { AdminLayout } from 'uecsio-admin-layout'
-import 'uecsio-admin-layout/style.css'
-import type { MenuItem } from 'uecsio-admin-layout'
+import { AdminLayout } from '@uecsio/admin-layout'
+import '@uecsio/admin-layout/style.css'
+import type { MenuItem } from '@uecsio/admin-layout'
 
 const menuItems: MenuItem[] = [
   { id: 'dashboard', label: 'Dashboard', icon: 'fa-solid fa-house', href: '/' },
@@ -153,7 +153,7 @@ Individual menu item with expand/collapse for children. Used internally by `Admi
 Shared reactive sidebar state.
 
 ```ts
-import { useSidebar } from 'uecsio-admin-layout'
+import { useSidebar } from '@uecsio/admin-layout'
 
 const { isOpen, toggle, open, close } = useSidebar()
 ```
@@ -188,8 +188,8 @@ The layout is router-agnostic. Wire it to your router by handling the `navigate`
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
-import { AdminLayout } from 'uecsio-admin-layout'
-import type { MenuItem } from 'uecsio-admin-layout'
+import { AdminLayout } from '@uecsio/admin-layout'
+import type { MenuItem } from '@uecsio/admin-layout'
 
 const router = useRouter()
 const route = useRoute()
@@ -227,7 +227,7 @@ If you need full control over icon rendering (e.g. using `lucide-vue-next` or cu
 
 ## Styling
 
-The package ships its own CSS (`uecsio-admin-layout/style.css`) with Tailwind utility classes and HSL CSS variable tokens for theming. Override the variables in your own CSS to customize colors:
+The package ships its own CSS (`@uecsio/admin-layout/style.css`) with Tailwind utility classes and HSL CSS variable tokens for theming. Override the variables in your own CSS to customize colors:
 
 ```css
 :root {

@@ -16,7 +16,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Tailwind CSS 3 with CSS variables for theming (defined in `src/index.css`)
 - No UI library — plain Vue components with Tailwind classes
 - Vitest + jsdom + @vue/test-utils for tests
-- Published as an npm package (`uecsio-admin-layout`)
+- Published as an npm package (`@uecsio/admin-layout`)
 
 ## Architecture
 
@@ -35,7 +35,7 @@ This is an **npm library package** that exports a configurable admin layout (hea
 - Vite library mode builds `src/index.ts` as the entry
 - Output: `dist/index.js` (ES module), `dist/style.css`, `dist/index.d.ts`
 - `vue` is an external/peer dependency
-- Consumers import components and CSS: `import 'uecsio-admin-layout/style.css'`
+- Consumers import components and CSS: `import '@uecsio/admin-layout/style.css'`
 
 ### Component design
 
